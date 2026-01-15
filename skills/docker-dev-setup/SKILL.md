@@ -407,3 +407,5 @@ docker compose up "$@"
 - Same docker commands work in PowerShell
 
 **Make executable**: `chmod +x dev.sh` (Unix) or adjust execution policy (Windows)
+
+**Platform-appropriate scripts**: When writing shell scripts, use the Bash tool with heredoc syntax (`cat << 'EOF' > dev.sh`) on Unix/macOS to ensure proper LF line endings. For Windows users, create PowerShell scripts (.ps1) instead of bash scripts.
